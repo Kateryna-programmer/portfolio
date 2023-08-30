@@ -1,0 +1,32 @@
+body {
+  background-color: #141414;
+  font-family: 'Urbanist', sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 1px;
+}
+button {
+  color: inherit;
+}
+.navbar__item_active {
+  font-size: 18px;
+  font-weight: 700;
+  color: #578ce8;
+}
+.fa-chevron-down.fa-active {
+  transform: rotate(180deg);
+}

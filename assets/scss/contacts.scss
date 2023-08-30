@@ -1,0 +1,68 @@
+.overlay__about {
+  background-image: url(../img/bg-4.jpg);
+  background-size: cover;
+}
+.contacts {
+  padding-top: 50px;
+  &__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  &__img {
+    img {
+      max-width: 200px;
+      @media (min-width: 900px) {
+        max-width: 400px;
+      }
+      animation: contacts 0.5s linear alternate-reverse infinite;
+    }
+    @keyframes contacts {
+      from {
+        transform: rotate(-3deg);
+      }
+      to {
+        transform: translate(3deg);
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+      gap: 100px;
+    }
+  }
+  &__content {
+    padding: 20px;
+    box-shadow: 2px -2px 50px #578ce8;
+
+    & ul {
+      padding-left: 0;
+    }
+    & li {
+      padding: 10px;
+      font-size: 18px;
+      transition: 0.4s ease-in;
+      @media (min-width: 900px) {
+        font-size: 20px;
+      }
+      &:hover {
+        color: #578ce8;
+      }
+    }
+    & i {
+      padding-right: 10px;
+    }
+    & p {
+      @media (min-width: 900px) {
+        font-size: 18px;
+      }
+      padding: 10px;
+      line-height: 1.5;
+    }
+  }
+}
