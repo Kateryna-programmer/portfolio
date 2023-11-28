@@ -533,6 +533,18 @@ button {
 .skills__education-list i {
   padding-right: 10px;
 }
+.skills__link {
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+
+  color: #578ce8;
+}
+.skills__link:hover,
+.skills__link:focus {
+  text-decoration: underline;
+
+  color: #ffffff;
+}
 
 .overlay__portfolio {
   background-image: url(../img/bg-3.jpg);

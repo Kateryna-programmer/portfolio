@@ -160,4 +160,13 @@
       padding-right: 10px;
     }
   }
+  &__link {
+    color: #578ce8;
+    transition: all 0.5s linear;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
 }
